@@ -48,63 +48,67 @@ const Calories = () => {
   };
 
   return (
-    <div className="Container">
-      <Navbar />
-      <Card className="card">
-        <Typography className="Card-header">
-          How many Calories Burned
-        </Typography>
-        <CardContent className="input_field">
-          <TextField
-            onChange={handleChangeWeight}
-            required
-            label="Enter your weight in Kg"
-            type="number"
-          />
-          <TextField
-            onChange={handleChangeTime}
-            required
-            label="Time in hours"
-            type="number"
-          />
-        </CardContent>
-        <FormControl>
-          <FormLabel className="Radio_header">Choose Activity (MET):</FormLabel>
-          <RadioGroup
-            aria-labelledby="demo-radio-buttons-group-label"
-            name="radio-buttons-group"
-            className="RadioGroup"
-            onChange={handleChangeMet}
-          >
-            <FormControlLabel
-              value="Walking"
-              control={<Radio />}
-              label="Walking"
+    <>
+      <Navbar />{" "}
+      <div className="Container">
+        <Card className="card">
+          <Typography className="Card-header">
+            How many Calories Burned
+          </Typography>
+          <CardContent className="input_field">
+            <TextField
+              onChange={handleChangeWeight}
+              required
+              label="Enter your weight in Kg"
+              type="number"
             />
-            <FormControlLabel
-              value="Running"
-              control={<Radio />}
-              label="Running"
+            <TextField
+              onChange={handleChangeTime}
+              required
+              label="Time in hours"
+              type="number"
             />
-            <FormControlLabel
-              value="Cycling"
-              control={<Radio />}
-              label="Cycling"
-            />
-          </RadioGroup>
-        </FormControl>
+          </CardContent>
+          <FormControl>
+            <FormLabel className="Radio_header">
+              Choose Activity (MET):
+            </FormLabel>
+            <RadioGroup
+              aria-labelledby="demo-radio-buttons-group-label"
+              name="radio-buttons-group"
+              className="RadioGroup"
+              onChange={handleChangeMet}
+            >
+              <FormControlLabel
+                value="Walking"
+                control={<Radio />}
+                label="Walking"
+              />
+              <FormControlLabel
+                value="Running"
+                control={<Radio />}
+                label="Running"
+              />
+              <FormControlLabel
+                value="Cycling"
+                control={<Radio />}
+                label="Cycling"
+              />
+            </RadioGroup>
+          </FormControl>
 
-        <CardActions>
-          <Button variant="contained" onClick={handleOnClick}>
-            Calculate Calories
-          </Button>
-        </CardActions>
+          <CardActions>
+            <Button variant="contained" onClick={handleOnClick}>
+              Calculate Calories
+            </Button>
+          </CardActions>
 
-        <Typography className="Result">
-          Burned Calories: {calories.toFixed(2)}
-        </Typography>
-      </Card>
-    </div>
+          <Typography className="Result">
+            Burned Calories: {calories.toFixed(2)}
+          </Typography>
+        </Card>
+      </div>
+    </>
   );
 };
 

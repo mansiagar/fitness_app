@@ -41,37 +41,39 @@ const WorkOut = () => {
   };
 
   return (
-    <div className="Container">
+    <>
       <Navbar />
-      <Card className="card">
-        <Typography className="Card-header">
-          Workout Time: {formatTime(time)}
-        </Typography>
-        <div className="Button">
-          <Button
-            className=" button"
-            variant="contained"
-            onClick={startTimer}
-            disabled={isActive}
-          >
-            Start WorkOut
-          </Button>
+      <div className="Container">
+        <Card className="card">
+          <Typography className="Card-header">
+            Workout Time: {formatTime(time)}
+          </Typography>
+          <div className="Button">
+            <Button
+              className=" button"
+              variant="contained"
+              onClick={startTimer}
+              disabled={isActive}
+            >
+              Start WorkOut
+            </Button>
 
-          <Button
-            className="button"
-            variant="contained"
-            onClick={stopTimer}
-            disabled={!isActive}
-          >
-            End WorkOut
-          </Button>
-        </div>
+            <Button
+              className="button"
+              variant="contained"
+              onClick={stopTimer}
+              disabled={!isActive}
+            >
+              End WorkOut
+            </Button>
+          </div>
 
-        <Typography className="Result">
-          Total WorkOutTime:{TotalTime}
-        </Typography>
-      </Card>
-    </div>
+          <Typography className="Result">
+            Total WorkOutTime:{TotalTime}
+          </Typography>
+        </Card>
+      </div>
+    </>
   );
 };
 
