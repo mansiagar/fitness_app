@@ -11,7 +11,9 @@ const Welcome = () => {
   return (
     <div>
       <h1>Welcome Our Fitness Tracker App</h1>
-      <Button onClick={handleClick}>Trace Your Fitness</Button>
+      <Button variant="contained" onClick={handleClick}>
+        Trace Your Fitness
+      </Button>
     </div>
   );
 };
