@@ -1,0 +1,38 @@
+.Container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Card-header {
+  color: brown;
+  font-weight: 500;
+  text-align: center;
+  font-size: larger;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin-top: 0px;
+}
+.Result {
+  margin: 10px;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.input_field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+.CardContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

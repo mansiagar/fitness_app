@@ -1,0 +1,40 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.card {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Card-header {
+  color: brown;
+  font-weight: 500;
+  text-align: center;
+  font-size: larger;
+  background-color: antiquewhite;
+}
+.Result {
+  margin-top: 30px;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.input_field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+.Button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 100px;
+}
