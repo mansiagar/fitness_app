@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import "./WorkOut.css";
+import Navbar from "../Navbar/Navbar";
 
 const WorkOut = () => {
   const [time, setTime] = useState(0);
@@ -41,6 +42,7 @@ const WorkOut = () => {
 
   return (
     <div className="Container">
+      <Navbar />
       <Card className="card">
         <Typography className="Card-header">
           Workout Time: {formatTime(time)}

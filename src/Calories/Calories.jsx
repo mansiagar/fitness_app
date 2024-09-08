@@ -11,6 +11,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import "./Calories.css";
+import Navbar from "../Navbar/Navbar";
 
 const Calories = () => {
   // MET values for different activities
@@ -48,6 +49,7 @@ const Calories = () => {
 
   return (
     <div className="Container">
+      <Navbar />
       <Card className="card">
         <Typography className="Card-header">
           How many Calories Burned
